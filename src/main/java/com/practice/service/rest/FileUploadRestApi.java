@@ -48,7 +48,6 @@ public class FileUploadRestApi {
             File testFile = new File("UploadedFile");
             FileUtils.writeByteArrayToFile(testFile, file.getBytes());
             LargeFile largeFile = new LargeFile();
-            largeFile.setId(1);
             largeFile.setName(file.getName());
             largeFile.setData(file.getBytes());
             dbService.createLargeFileRecord(largeFile);

@@ -18,6 +18,7 @@ public class MPORootSegment {
 @Table(name = "company_files", schema = "fileupload")
 public class LargeFile {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String name;
     private byte[] data;
