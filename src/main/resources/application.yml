@@ -1,0 +1,21 @@
+spring:
+    application:
+        name: spring-boot-file-upload
+    servlet:
+        multipart:
+            enabled: false
+            max-file-size: 500MB
+    datasource:
+        url: jdbc:postgresql://localhost:4040/practice
+        username: jcms
+        password: jcms
+    liquibase:
+        change-log: classpath:db/changelog/db.changelog-master.yml
+        default-schema: fileupload
+server:
+    servlet:
+        contextPath: /spring-boot-file-upload
+    port: 8090
+logging:
+    level:
+        ROOT: DEBUG
