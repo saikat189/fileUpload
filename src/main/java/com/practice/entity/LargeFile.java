@@ -21,7 +21,7 @@ public class LargeFile {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String name;
-    private byte[] data;
+    private String location;
 
     public long getId() {
         return id;
@@ -39,11 +39,11 @@ public class LargeFile {
         this.name = name;
     }
 
-    public byte[] getData() {
-        return data;
+    public String getData() {
+        return location;
     }
 
-    public void setData(byte[] data) {
-        this.data = data;
+    public void setData(String location) {
+        this.location = location;
     }
 }

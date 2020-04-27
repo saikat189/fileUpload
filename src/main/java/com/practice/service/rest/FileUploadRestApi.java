@@ -45,11 +45,11 @@ public class FileUploadRestApi {
 
         try {
 
-            File testFile = new File("UploadedFile");
+            File testFile = new File("output/"+file.getOriginalFilename());
             FileUtils.writeByteArrayToFile(testFile, file.getBytes());
             LargeFile largeFile = new LargeFile();
             largeFile.setName(file.getName());
-            largeFile.setData(file.getBytes());
+            largeFile.setData("/output/"+file.getOriginalFilename());
             dbService.createLargeFileRecord(largeFile);
             LOG.info(" File info created..");
             

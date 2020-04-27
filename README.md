@@ -11,12 +11,12 @@ Steps:
 3.Clck on "POST"
 4. Click on "Try now"
 
-Assumptions: Swagger home page will be authenticated with OKTA sso,a large file will be uploaded to 
-database and consumed by other services(to process the file if required)
+Assumptions: Swagger home page will be authenticated with OKTA sso,a large file will be 
+uploaded to local file sytem and store its information to db.We can also have a consumer
+service of those files
 
 Challanges: 
-This is still not full proof.While uploading very large file it's getting 
-heap space error.Currently working on it.
+OKTA SSO privilege to all services.
 
 Work In Progress:
 1.Upload a very large file.
