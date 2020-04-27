@@ -12,6 +12,13 @@ spring:
     liquibase:
         change-log: classpath:db/changelog/db.changelog-master.yml
         default-schema: fileupload
+    thymeleaf:  
+        cache: false
+okta:  
+  oauth2:  
+    issuer: https://dev-691754.okta.com/oauth2/default
+    client-id: 0oaa4rgw81K9UhJEt4x6
+    client-secret: pQon4cGJA0qdHXyFfOaTevQHiTji1i9AR4FlwNsq
 server:
     servlet:
         contextPath: /spring-boot-file-upload
